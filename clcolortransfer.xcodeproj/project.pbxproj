@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		522F3A01145E4FBA004503D5 /* ColorTransfer.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522F39FF145E4E77004503D5 /* ColorTransfer.cl */; };
+		522F3A04145E505F004503D5 /* inputsource.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522F3A02145E5049004503D5 /* inputsource.png */; };
+		522F3A05145E5063004503D5 /* inputtarget.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522F3A03145E5049004503D5 /* inputtarget.png */; };
+		527D7015145EF90A00AAC85E /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527D7014145EF90A00AAC85E /* libfreeimage.a */; };
+		52AAA5DC1459CC55006FA8F7 /* CLManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AAA5D71459CC55006FA8F7 /* CLManager.cpp */; };
+		52AAA5DE1459CC55006FA8F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AAA5DB1459CC55006FA8F7 /* main.cpp */; };
+		52AAA5E01459CD4F006FA8F7 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AAA5DF1459CD4F006FA8F7 /* OpenCL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52AAA5CB1459CC27006FA8F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = .;
+			dstSubfolderSpec = 16;
+			files = (
+				522F3A05145E5063004503D5 /* inputtarget.png in CopyFiles */,
+				522F3A04145E505F004503D5 /* inputsource.png in CopyFiles */,
+				522F3A01145E4FBA004503D5 /* ColorTransfer.cl in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		522F39FF145E4E77004503D5 /* ColorTransfer.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = ColorTransfer.cl; path = src/ColorTransfer.cl; sourceTree = SOURCE_ROOT; };
+		522F3A02145E5049004503D5 /* inputsource.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = inputsource.png; path = images/inputsource.png; sourceTree = "<group>"; };
+		522F3A03145E5049004503D5 /* inputtarget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = inputtarget.png; path = images/inputtarget.png; sourceTree = "<group>"; };
+		527D7014145EF90A00AAC85E /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = dep/lib/libfreeimage.a; sourceTree = "<group>"; };
+		52AAA5CD1459CC27006FA8F7 /* clcolortransfer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = clcolortransfer; sourceTree = BUILT_PRODUCTS_DIR; };
+		52AAA5D71459CC55006FA8F7 /* CLManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CLManager.cpp; path = ../src/CLManager.cpp; sourceTree = "<group>"; };
+		52AAA5D81459CC55006FA8F7 /* CLManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CLManager.hpp; path = ../src/CLManager.hpp; sourceTree = "<group>"; };
+		52AAA5D91459CC55006FA8F7 /* CLWrappers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CLWrappers.hpp; path = ../src/CLWrappers.hpp; sourceTree = "<group>"; };
+		52AAA5DB1459CC55006FA8F7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
+		52AAA5DF1459CD4F006FA8F7 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52AAA5CA1459CC27006FA8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527D7015145EF90A00AAC85E /* libfreeimage.a in Frameworks */,
+				52AAA5E01459CD4F006FA8F7 /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520217011459A71F00A10946 = {
+			isa = PBXGroup;
+			children = (
+				527D7014145EF90A00AAC85E /* libfreeimage.a */,
+				522CE86E145B00F60055012C /* Images */,
+				52AAA5DF1459CD4F006FA8F7 /* OpenCL.framework */,
+				52AAA5CF1459CC27006FA8F7 /* clcolortransfer */,
+				5202170D1459A71F00A10946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5202170D1459A71F00A10946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52AAA5CD1459CC27006FA8F7 /* clcolortransfer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		522CE86E145B00F60055012C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				522F3A02145E5049004503D5 /* inputsource.png */,
+				522F3A03145E5049004503D5 /* inputtarget.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		52AAA5CF1459CC27006FA8F7 /* clcolortransfer */ = {
+			isa = PBXGroup;
+			children = (
+				522F39FF145E4E77004503D5 /* ColorTransfer.cl */,
+				52AAA5D71459CC55006FA8F7 /* CLManager.cpp */,
+				52AAA5D81459CC55006FA8F7 /* CLManager.hpp */,
+				52AAA5D91459CC55006FA8F7 /* CLWrappers.hpp */,
+				52AAA5DB1459CC55006FA8F7 /* main.cpp */,
+			);
+			path = clcolortransfer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52AAA5CC1459CC27006FA8F7 /* clcolortransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52AAA5D41459CC27006FA8F7 /* Build configuration list for PBXNativeTarget "clcolortransfer" */;
+			buildPhases = (
+				52AAA5C91459CC27006FA8F7 /* Sources */,
+				52AAA5CA1459CC27006FA8F7 /* Frameworks */,
+				52AAA5CB1459CC27006FA8F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clcolortransfer;
+			productName = clcolortransfer;
+			productReference = 52AAA5CD1459CC27006FA8F7 /* clcolortransfer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		520217031459A71F00A10946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 520217061459A71F00A10946 /* Build configuration list for PBXProject "clcolortransfer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 520217011459A71F00A10946;
+			productRefGroup = 5202170D1459A71F00A10946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52AAA5CC1459CC27006FA8F7 /* clcolortransfer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52AAA5C91459CC27006FA8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AAA5DC1459CC55006FA8F7 /* CLManager.cpp in Sources */,
+				52AAA5DE1459CC55006FA8F7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		520217141459A71F00A10946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./dep/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		520217151459A71F00A10946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./dep/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52AAA5D51459CC27006FA8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dep/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52AAA5D61459CC27006FA8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dep/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		520217061459A71F00A10946 /* Build configuration list for PBXProject "clcolortransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520217141459A71F00A10946 /* Debug */,
+				520217151459A71F00A10946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52AAA5D41459CC27006FA8F7 /* Build configuration list for PBXNativeTarget "clcolortransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52AAA5D51459CC27006FA8F7 /* Debug */,
+				52AAA5D61459CC27006FA8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 520217031459A71F00A10946 /* Project object */;
+}
